@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  dbrks_dev:
+    build:
+      context: .
+      args:
+        - DBCONNECT_VRS=${DBCONNECT_VRS}
+    container_name: dbrks_dev_local  
+    volumes:
+      - ../..:/home/dev
+      - .vscode:/home/dev/.vscode #empty vscode settings folder to stop local settings overriding container settings. 
+      - ../../.git:/home/dev/.git
+    ports:
+      - "8888:8888"
+
+

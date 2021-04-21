@@ -1,0 +1,79 @@
+{
+    "workspaceFolder": "/home/dev",
+    "shutdownAction": "stopContainer",
+    "extensions": [
+		"eamodio.gitlens",
+		"ms-azuretools.vscode-docker",
+		"ms-python.python",
+		"ms-toolsai.jupyter",
+		"njpwerner.autodocstring",
+		"paiqo.databricks-vscode",
+		"VisualStudioExptTeam.vscodeintellicode"
+	],
+    "settings": {
+		"python.formatting.provider": "yapf",
+		"python.formatting.yapfArgs": [
+			" — style",
+			"${workspaceFolder}/setup.cfg"
+		],
+		"python.linting.pylintArgs": [
+			"--rcfile=${workspaceFolder}/setup.cfg"
+		],
+		"python.linting.mypyArgs": [
+			"--config-file=${workspaceFolder}/setup.cfg"
+		],
+		"python.linting.enabled": true,
+		"python.linting.pylintEnabled": true,
+		"remote.autoForwardPorts": false,
+		"remote.restoreForwardedPorts": false,
+		"terminal.integrated.shell.linux": "/bin/bash",
+		"python.languageServer": "Jedi",
+		"python.jediEnabled": true,
+		"python.autoComplete.addBrackets": true,
+		"python.linting.mypyEnabled": true,
+		"python.linting.flake8Enabled": true,
+		"python.testing.pytestEnabled": true,
+		"python.testing.pytestArgs": [
+			"--rootdir=./src/python/"
+		],
+		"python.linting.banditEnabled": true,
+		"python.formatting.blackPath": "/opt/conda/envs/dbrks_dev/bin/black",
+		"python.linting.pylintPath": "/opt/conda/envs/dbrks_dev/bin/pylint",
+		"python.pythonPath": "/opt/conda/envs/dbrks_dev/bin/python",
+		"python.venvPath": "/opt/conda/envs/dbrks_dev/lib/python3.7/site-packages/pyspark/jars",
+		"python.formatting.autopep8Path": "/opt/conda/envs/dbrks_dev/bin/autopep8",
+		"python.formatting.yapfPath": "/opt/conda/envs/dbrks_dev/bin/yapf",
+		"python.linting.banditPath": "/opt/conda/envs/dbrks_dev/bin/bandit",
+		"python.linting.flake8Path": "/opt/conda/envs/dbrks_dev/bin/flake8",
+		"python.linting.mypyPath": "/opt/conda/envs/dbrks_dev/bin/mypy",
+		"python.linting.pycodestylePath": "/opt/conda/envs/dbrks_dev/bin/pycodestyle",
+		"python.envFile": "${workspaceFolder}/.env",
+		"files.watcherExclude": {
+			"**/build/**": true,
+			"**/dist/**": true,
+			"**/.ipynb_checkpoints/**": true,
+			"**/*.egg-info/**": true,
+			"**/.pytest_cache/**": true,
+			"**/__pycache__/**": true,
+			"**/.mypy_cache/**": true,
+			"**/.venv/**": true
+		},
+		"files.exclude": {
+			"**/.pytest_cache/**": true,
+			"**/.mypy_cache/**": true,
+			"**/__pycache__/**": true,
+			"**/*.egg-info/**": true
+		},
+		"workbench.editorAssociations": [
+			{
+				"viewType": "jupyter.notebook.ipynb",
+				"filenamePattern": "*.ipynb"
+			}
+		],
+		"jupyter.defaultCellMarker": "# COMMAND ----------",
+		"jupyter.codeRegularExpression": "^(#\\s*%%|#\\s*\\<codecell\\>|#\\s*In\\[\\d*?\\]|#\\s*In\\[ \\]|#\\s*Databricks\\snotebook\\ssource)",
+		"jupyter.jupyterServerType": "remote",
+		"jupyter.allowUnauthorizedRemoteConnection": true,
+		"jupyter.alwaysTrustNotebooks": true
+	}
+}

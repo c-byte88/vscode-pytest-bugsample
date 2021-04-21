@@ -1,0 +1,1 @@
+Package that conatins helper classes, methods and general functionalitiy for the Brand pulse tracking database pipeline

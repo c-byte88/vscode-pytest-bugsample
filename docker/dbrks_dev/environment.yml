@@ -1,0 +1,37 @@
+name: dbrks_dev
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7.*
+  - pip==21.0.1
+  - yapf
+  - coverage
+  - numpy=1.18.1
+  - openpyxl=3.0.4
+  - pandas=1.0.1
+  - pylint
+  - pytest
+  - Bandit
+  - radon
+  - rope
+  - mypy
+  - flake8
+  - flake8-docstrings
+  - spark-testing-base
+  - pip:
+    - databricks-api==0.6.0
+    - databricks-cli==0.12.2
+    - deltalake
+    - ipykernel
+    - six
+    - pyflakes==2.2.0
+    - koalas
+    # project specific
+    - junit-xml==1.9
+    - parameterized==0.8.1
+    - python-http-client==3.3.2
+    - requests==2.25.1
+    - sendgrid==6.6.0
+    - urllib3==1.26.3
+    - xmlrunner==1.7.7
+prefix: ~\.conda\envs\dbrks_dev
